@@ -1,0 +1,28 @@
+
+#contactsmodal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        h4.modal-title Ваше сообщение отправлено
+      .modal-body
+        p Благодарим Вас за отзыв, по возможности мы обязательно свяжемся с Вами.
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Закрыть
+    // /.modal-content
+  // /.modal-dialog
+#error.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+        h4.modal-title Ваше сообщение не отправлено
+      .modal-body
+        p
+          | Что-то пошло не так. Пожалуйста, повторите попытку позднее. Если проблема не будет устранена,
+          | сообщите, пожалуйста, о ней по контактному телефону.
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Закрыть
+    // /.modal-content
+  // /.modal-dialog
+

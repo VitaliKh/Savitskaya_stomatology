@@ -1,0 +1,60 @@
+
+#contacts.container-fluid
+  h2 Контакты
+  .container-fluid
+    .row
+      .col-xs-12.col-md-6.col-sm-6
+        iframe(width='100%', height='400', frameborder='0', style='border:0', allowfullscreen='', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1169.9171944914897!2d28.32089925822823!3d54.09441159503565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46da504975ab55d5%3A0x21ba32ecf1684dc3!2z0YPQuy4g0JTQtdGA0LXQstGP0L3QutC-IDgsIFpob2Rpbm8!5e0!3m2!1sen!2sby!4v1485785618914')
+      .col-xs-12.col-md-6.col-sm-6
+        span.glyphicon.glyphicon-home
+        p
+          | Мы рады вас видеть по адресу : г. Жодино, ул. Деревянко, дом 8.
+          br
+          |               Мы работаем
+          |               Пн.-пт.  8:00-20:00, Сб. 8:00-15-00
+          br
+        span.glyphicon.glyphicon-phone
+        p
+          | Предварительная запись по телефонам:
+          br
+          |               +37529 322 3775
+          br
+          |               801775 716 06
+          br
+        span.glyphicon.glyphicon-user
+        p
+          | Проконсультироваться с доктором вы можете в любое удобное для вас время без предварительной записи.
+          br
+          |               При опоздании более чем на 15  минут вам будет предложено перенести визит к стоматологу на
+          |               ближайшее свободное время.
+          br
+        span.glyphicon.glyphicon-hand-right
+          a(href='https://vk.com/zubatik', target='_blank')  Наша группа в контакте.
+        p
+          | В группе можно задать интересующие вопросы,озвучить ваши предложения,написать что понравилось,что не
+          | очень. Кто понравился,кто нет:-). Всему написанному будет уделено внимание.  Если  задан вопрос,
+          | обязательно будет дан ответ.
+  .container-fluid
+    .row
+      .col-xs-12.col-md-5.col-sm-8
+        form#form(role='form', novalidate='')
+          #message-formgroup.form-group.has-feedback
+            label(for='message') Сообщение*
+            textarea#message.form-control(rows='4', placeholder='Введите сообщение', required='')
+            span#message-glyphicon.glyphicon.form-control-feedback.hidden
+            span#message-danger.text-danger.hidden.glyphicon.glyphicon-exclamation-sign Сообщение должно содержать не менее 10 символов
+          #name-formgroup.form-group.has-feedback
+            label(for='name') Имя*
+            input#name.form-control(type='text', placeholder='Введите имя', required='')
+            span#name-glyphicon.glyphicon.form-control-feedback.hidden
+            span#name-danger.text-danger.hidden.glyphicon.glyphicon-exclamation-sign Имя должно содержать не менее 4 символов
+          #email-formgroup.form-group.has-feedback
+            label(for='email') Email*
+            input#email.form-control(type='email', placeholder='Введите email', required='')
+            span#email-glyphicon.glyphicon.form-control-feedback.hidden
+            span#email-danger.text-danger.hidden.glyphicon.glyphicon-exclamation-sign Введите корректный email
+          .form-group
+            label(for='website') Ваш сайт
+            input#website.form-control(type='url', placeholder='')
+          button#form-submit.btn.btn-primary.pull-right(type='submit') Отправить
+

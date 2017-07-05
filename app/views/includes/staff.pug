@@ -1,0 +1,16 @@
+
+#staff.container-fluid
+  h2 Наши сотрудники
+  .row
+    .col-md-5.col-sm-5.col-xs-12
+      p
+        | Коллектив стоматологической клиники «Савицкая Е.Э.» — это профессионалы своего дела! Опыт, трудолюбие и
+        | любовь к своей работе объединяет наших сотрудников. К каждому пациенту мы найдем свой подход, поэтому даже
+        | дети не боятся приходить к нам на лечение.
+    .col-md-5.col-md-push-1.col-sm-7.col-xs-12
+      #carousel-staff.carousel.slide(data-wrap='true', data-interval='false')
+        // Wrapper for slides
+        .carousel-inner
+      button#carousel-prev.btn.btn-primary.glyphicon.glyphicon-chevron-left
+      button#carousel-next.btn.btn-primary.glyphicon.glyphicon-chevron-right.pull-right
+

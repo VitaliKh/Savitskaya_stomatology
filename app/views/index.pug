@@ -1,0 +1,68 @@
+doctype html
+html(lang='')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title client
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+  body.text-justify(data-spy='scroll', data-target='.navbar')
+    //if IE
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    include includes/navbar.pug
+    include includes/top.pug
+    include includes/main.pug
+    include includes/advantage.pug
+    include includes/service.pug
+    include includes/staff.pug
+    include includes/contacts.pug
+    include includes/footer.pug
+    include includes/modals.pug
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    //
+          <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='https://www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');
+          </script>
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+    // build:js scripts/plugins.js
+    script(src='/bower_components/bootstrap/js/affix.js')
+    script(src='/bower_components/bootstrap/js/alert.js')
+    script(src='/bower_components/bootstrap/js/dropdown.js')
+    script(src='/bower_components/bootstrap/js/tooltip.js')
+    script(src='/bower_components/bootstrap/js/modal.js')
+    script(src='/bower_components/bootstrap/js/transition.js')
+    script(src='/bower_components/bootstrap/js/button.js')
+    script(src='/bower_components/bootstrap/js/popover.js')
+    script(src='/bower_components/bootstrap/js/carousel.js')
+    script(src='/bower_components/bootstrap/js/scrollspy.js')
+    script(src='/bower_components/bootstrap/js/collapse.js')
+    script(src='/bower_components/bootstrap/js/tab.js')
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    script(src='scripts/contactFormHandler.js')
+    script(src='scripts/staff.js')
+    // endbuild

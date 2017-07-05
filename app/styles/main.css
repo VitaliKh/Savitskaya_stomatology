@@ -1,0 +1,112 @@
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+.navbar {
+  background-color: #a2f8b2;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: white;
+  height: 100vh;
+  opacity: 0.7;
+  margin-bottom: 0;
+  color: #0c7d0f;
+
+}
+.jumbotron b {
+  color: #0019f8;
+
+}
+.jumbotron h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.jumbotron p {
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.jumbotron span.glyphicon-phone-alt {
+  font-weight: 900;
+  color: #ba6c00;
+  font-size: 25pt;
+}
+
+#main img, #advantage img {
+  margin: 10px;
+  margin-left: 2px;
+  opacity: 0.75;
+}
+#main h3 {
+  text-align: center;
+}
+
+#advantage p, #service p, #staff p {
+  padding: 10px;
+  text-indent: 1.5em;
+}
+
+#service img {
+  margin: 10px;
+  margin-left: 2px;
+}
+#service .nav {
+  font-weight: 700;
+  margin-top: 10px;
+}
+#tera img, #orto img, #rento img {
+  float: left;
+  margin: 10px;
+  margin-right: 30px;
+  margin-left: 2px;
+}
+#rentobutton {
+  cursor: pointer;
+  color: #0027ba;
+}
+
+#staff-name {
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+
+
+
+#main, #advantage, #service, #staff, #contacts {
+  background-color: #c8f8c3;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-top: 1px dashed black;
+}
+body {
+  background-image: url(../images/apple.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+}
+
+form {
+  padding-top: 20px;
+  border-top: 1px dotted black;
+}
+
+#footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+
